@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        title="Passport-Local Example"
+    body
+        a(href="/") Home
+        | &nbsp;|&nbsp;
+        if user
+            a(href="/account") Account
+            | &nbsp;|&nbsp;
+            a(href="/logout") Log Out
+        else
+            a(href="/login") Log In
+            | &nbsp;|&nbsp;
+            a(href="/regenSess") RegenSess
+
+        block content
